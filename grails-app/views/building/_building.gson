@@ -1,0 +1,7 @@
+import mi.edificio.server.Building
+
+model {
+	Building building
+}
+
+json g.render(building)

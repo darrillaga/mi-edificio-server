@@ -1,0 +1,8 @@
+import mi.edificio.server.Comment
+
+model {
+	Iterable<Comment> commentList
+}
+
+json tmpl.comment(commentList ?: [])
+

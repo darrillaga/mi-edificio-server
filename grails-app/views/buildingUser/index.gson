@@ -1,0 +1,8 @@
+import mi.edificio.server.BuildingUser
+
+model {
+	Iterable<BuildingUser> buildingUserList
+}
+
+json tmpl.buildingUser(buildingUserList ?: [])
+

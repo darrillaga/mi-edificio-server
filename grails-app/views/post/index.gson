@@ -1,0 +1,8 @@
+import mi.edificio.server.Post
+
+model {
+	Iterable<Post> postList
+}
+
+json tmpl.post(postList ?: [])
+

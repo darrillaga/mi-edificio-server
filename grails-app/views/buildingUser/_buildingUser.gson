@@ -1,0 +1,7 @@
+import mi.edificio.server.BuildingUser
+
+model {
+	BuildingUser buildingUser
+}
+
+json g.render(buildingUser)

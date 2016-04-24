@@ -1,0 +1,7 @@
+import mi.edificio.server.Comment
+
+model {
+	Comment comment
+}
+
+json g.render(comment)

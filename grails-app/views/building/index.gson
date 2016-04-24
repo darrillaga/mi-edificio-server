@@ -1,0 +1,8 @@
+import mi.edificio.server.Building
+
+model {
+	Iterable<Building> buildingList
+}
+
+json tmpl.building(buildingList ?: [])
+

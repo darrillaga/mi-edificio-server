@@ -1,0 +1,7 @@
+import mi.edificio.server.Post
+
+model {
+	Post post
+}
+
+json g.render(post)
