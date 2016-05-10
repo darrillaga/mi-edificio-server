@@ -14,6 +14,10 @@ class BuildingController {
         respond Building.list(params), model:[buildingCount: Building.count()]
     }
 
+    def buildingByCode() {
+        respond Building.findByCode(params.code)
+    }
+
     def show(Building building) {
         respond building
     }

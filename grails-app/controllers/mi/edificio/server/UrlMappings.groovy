@@ -3,6 +3,8 @@ package mi.edificio.server
 class UrlMappings {
 
     static mappings = {
+        "/buildings/by-code/$code"(controller: 'building', action: 'buildingByCode', method: "GET")
+
         "/buildings"(resources: 'building') {
             "/buildingUsers"(resources: 'buildingUser')
             "/posts"(resources: 'post') {
