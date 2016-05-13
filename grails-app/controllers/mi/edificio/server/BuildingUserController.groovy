@@ -38,7 +38,7 @@ class BuildingUserController {
             return
         }
 
-        buildingUser.buildingCreator = building.buildingUsers.size == 0
+        buildingUser.buildingCreator = building.buildingUsers.count == 0
 
         building.addToBuildingUsers(buildingUser)
 
