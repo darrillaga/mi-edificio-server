@@ -38,6 +38,8 @@ class BuildingUserController {
             return
         }
 
+        buildingUser.buildingCreator = building.buildingUsers.size == 0
+
         building.addToBuildingUsers(buildingUser)
 
         if (building.hasErrors()) {
